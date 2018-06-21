@@ -21,6 +21,6 @@
 
 ## <a name="savingabagfile"></a>Saving a Bag File
 
-```bash
+```
 roslaunch atlascar2_bringup record_data.launch all_data:=true bag:=sev
 ```
