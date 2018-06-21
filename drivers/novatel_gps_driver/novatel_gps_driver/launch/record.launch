@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+<arg name = "record" default = "true"/>
+    <!--Launch the recorder-->
+  <node name="rosbag_record" pkg="rosbag" type="record" output="screen" if="$(arg record)" args=" /ld_rms/scan0 /ld_rms/scan1  /ld_rms/scan2 /ld_rms/scan3 /lms151_D_scan /lms151_E_scan  /bestpos /bestgnsspos /clock /corrimudata / destination /diagnostics /fix /gpgga /gpmrc / gps /imu /inspva /inscov / local_xy_origin /tf /tf_static /waypoints_full /waypoints_previous_next /waypoints_steps /bestvel /camera/image_color /DadosInclin /Path_marker
+/Path_marker_array /cloud_Outliers /cloud_Total /cloud_minada3 /ld_rms/scan0 /ld_rms/scan1 /ld_rms/scan2 /ld_rms/scan3 /odom  -o /home/atlascar2/bags/
+"/>
+</launch>

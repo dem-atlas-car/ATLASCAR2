@@ -1,0 +1,38 @@
+<package format="2">
+  <name>swri_transform_util</name>
+  <version>2.2.0</version>
+  <description>     The swri_transform_util package contains utility functions and classes for     transforming between coordinate frames.  </description>
+  <author>Marc Alban</author>
+  <maintainer email="malban@swri.org">Marc Alban</maintainer>
+  <license>BSD</license>
+  <url>https://github.com/swri-robotics/marti_common</url>
+  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>pkg-config</buildtool_depend>
+  <depend>boost</depend>
+  <depend>cv_bridge</depend>
+  <depend>diagnostic_msgs</depend>
+  <depend>dynamic_reconfigure</depend>
+  <depend>geographic_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>gps_common</depend>
+  <depend>libgeos++-dev</depend>
+  <depend>nodelet</depend>
+  <depend>proj</depend>
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>swri_math_util</depend>
+  <depend>swri_nodelet</depend>
+  <depend>swri_roscpp</depend>
+  <depend>swri_yaml_util</depend>
+  <depend>tf</depend>
+  <depend>topic_tools</depend>
+  <depend>yaml-cpp</depend>
+  <depend>novatel_gps_msgs</depend>
+  <depend>novatel_gps_driver</depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <test_depend>rostest</test_depend>
+  <export>
+    <nodelet plugin="${prefix}/nodelet_plugins.xml" />
+    <rosdoc config="rosdoc.yaml" />
+  </export>
+</package>

@@ -1,0 +1,36 @@
+<package format="2">
+  <name>multires_image</name>
+  <version>0.2.4</version>
+  <description>
+
+     multires_image
+
+  </description>
+  <author>Marc Alban</author>
+  <maintainer email="malban@swri.org">Marc Alban</maintainer>
+  <license>BSD</license>
+  <url>https://github.com/swri-robotics/mapviz</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>libqt5-core</depend>
+  <depend>libqt5-gui</depend>
+  <depend>libqt5-opengl</depend>
+  <build_depend>libqt5-opengl-dev</build_depend>
+  <depend>libqt5-widgets</depend>
+  <depend>mapviz</depend>
+  <depend>pluginlib</depend>
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>swri_math_util</depend>
+  <depend>swri_transform_util</depend>
+  <depend>swri_yaml_util</depend>
+  <depend>tf</depend>
+
+  <export>
+    <mapviz plugin="${prefix}/mapviz_plugins.xml" />
+  </export>
+
+</package>
+
+

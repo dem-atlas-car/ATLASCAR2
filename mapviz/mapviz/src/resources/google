@@ -1,0 +1,30 @@
+capture_directory: ~
+fixed_frame: map
+target_frame: map
+fix_orientation: false
+rotate_90: false
+enable_antialiasing: true
+show_displays: true
+show_status_bar: true
+show_capture_tools: true
+window_width: 1871
+window_height: 1028
+view_scale: 2.744752e+12
+offset_x: 0
+offset_y: 0
+use_latest_transforms: false
+background: "#787878"
+image_transport: compressedDepth
+displays:
+  - type: mapviz_plugins/tile_map
+    name: new display
+    config:
+      visible: true
+      collapsed: false
+      custom_sources:
+        - base_url: http://localhost:8080/wmts/gm_layer/gm_grid/{level}/{x}/{y}.png
+          max_zoom: 19
+          name: google maps
+          type: wmts
+      bing_api_key: ""
+      source: google maps

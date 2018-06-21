@@ -1,0 +1,27 @@
+capture_directory: ~
+fixed_frame: far_field
+target_frame: far_field
+fix_orientation: false
+rotate_90: false
+enable_antialiasing: true
+show_displays: true
+show_status_bar: true
+show_capture_tools: true
+window_width: 1871
+window_height: 1056
+view_scale: 5.619282e+10
+offset_x: 0
+offset_y: 0
+use_latest_transforms: false
+background: "#a0a0a4"
+image_transport: theora
+displays:
+  - type: mapviz_plugins/tile_map
+    name: new display
+    config:
+      visible: true
+      collapsed: false
+      custom_sources:
+        []
+      bing_api_key: ""
+      source: Stamen (terrain)

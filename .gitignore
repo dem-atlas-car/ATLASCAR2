@@ -49,3 +49,15 @@ qtcreator-*
 
 # Catkin custom files
 CATKIN_IGNORE
+
+#bag files
+*.bag
+
+.vscode/
+
+#launch with API key
+global_planning.launch
+
+
+#external repository 
+atlas-augmented-perception/ 

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- node database with param to acess database  ....  These parameters must be equal to     """"PGconn* conn = PQconnectdb("user=atlas password=atlascar dbname=atlas_monitoring hostaddr=193.137.172.18 port=5432");        in database_node.cpp   (start file)           """"-->
+    <node pkg="database" name="database_node" type="database_node" output="screen"/>
+    <param name="dbname" value="atlas_monitoring"  />
+    <param name="user" value="atlas"  />
+    <param name="password" value="atlascar"  />
+    <param name="hostaddr" value="193.137.172.18"  />
+    <param name="port" value="5432"  />
+</launch>

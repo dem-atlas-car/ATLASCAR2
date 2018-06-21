@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--Launches the recording of the system messages. -->
+<launch>
+<!--arguments-->
+
+    <arg name="all_data" default="true"/>
+    <arg name="bag" default="sev"/>
+
+    <!-- <param name="/use_sim_time" value="false"/> -->
+
+    <!--To record all data-->
+    <group if="$(arg all_data)">
+        <node name="rosbag_record" pkg="rosbag" type="record" output="screen" args=" /ld_rms/scan0 /ld_rms/scan1  /ld_rms/scan2 /ld_rms/scan3 /lms151_D_scan /lms151_E_scan /camera/image_color /bestpos /bestgnsspos /clock /corrimudata  /diagnostics /fix /gpgga /gpmrc /gps /imu /inspva /inscov /destination  /local_xy_origin /tf /tf_static /waypoints_full /waypoints_previous_next /waypoints_steps  /DadosInclin /Path_marker /Path_marker_array /cloud_Outliers /cloud_Total /cloud_minada3 /odom  /steer_drive_controller/cmd_vel /min_dist_to_obstacles  /reduced_pcl /merged_pcl /merged_polygon /lms_151_D /lms_151_E /ldmrs0 /ldmrs1 /ldmrs2 /ldmrs3  -o /home/$(env USER)/bags/$(arg bag)">
+        </node>
+    </group>
+
+    <!--To record only sensor data-->
+    <group unless="$(arg all_data)">
+        <node name="rosbag_record" pkg="rosbag" type="record" output="screen" args=" /ld_rms/scan0 /ld_rms/scan1  /ld_rms/scan2 /ld_rms/scan3 /lms151_D_scan /lms151_E_scan /camera/image_color /bestpos /bestgnsspos /clock /corrimudata /bestvel  /diagnostics /fix /gpgga /gpmrc /gps /imu /inspva /inscov -o /home/$(env USER)/bags/$(arg bag)">
+        </node>
+    </group>
+  </launch>

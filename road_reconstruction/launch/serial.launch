@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- Needed only for searching for services -->
+    <node pkg="rosserial_python" name="serial_node" type="serial_node.py" output="screen" args="/dev/inclinometria"/>
+</launch>

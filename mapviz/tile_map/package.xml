@@ -1,0 +1,40 @@
+<package format="2">
+  <name>tile_map</name>
+  <version>0.2.4</version>
+  <description>
+
+     Tile map provides a slippy map style interface for visualizing 
+     OpenStreetMap and GooleMap tiles.  A mapviz visualization plug-in is also
+     implemented
+
+  </description>
+  <author>Marc Alban</author>
+  <maintainer email="malban@swri.org">Marc Alban</maintainer>
+  <license>BSD</license>
+  <url>https://github.com/swri-robotics/mapviz</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>libjsoncpp-dev</build_depend>
+  <build_depend>libqt5-opengl-dev</build_depend>
+  <depend>libqt5-core</depend>
+  <depend>libqt5-gui</depend>
+  <depend>libqt5-network</depend>
+  <depend>libqt5-opengl</depend>
+  <depend>libqt5-widgets</depend>
+  <depend>mapviz</depend>
+  <depend>pluginlib</depend>
+  <depend>roscpp</depend>
+  <depend>swri_math_util</depend>
+  <depend>swri_transform_util</depend>
+  <depend>swri_yaml_util</depend>
+  <depend>tf</depend>
+  <exec_depend>libjsoncpp</exec_depend>
+
+  <export>
+    <mapviz plugin="${prefix}/mapviz_plugins.xml" />
+  </export>
+
+</package>
+
+

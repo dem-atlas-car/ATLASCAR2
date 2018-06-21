@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DirectionsResponse>
+ <status>OK</status>
+ <route>
+  <summary>Av. da Universidade/N235</summary>
+  <leg>
+   <step>
+    <travel_mode>DRIVING</travel_mode>
+    <start_location>
+     <lat>40.6331336</lat>
+     <lng>-8.6557976</lng>
+    </start_location>
+    <end_location>
+     <lat>40.6331550</lat>
+     <lng>-8.6557630</lng>
+    </end_location>
+    <polyline>
+     <points>ad_wFvqys@EG</points>
+    </polyline>
+    <duration>
+     <value>1</value>
+     <text>1 min</text>
+    </duration>
+    <html_instructions>Head &lt;b&gt;northeast&lt;/b&gt; on &lt;b&gt;Av. Artur Favara&lt;/b&gt; toward &lt;b&gt;Av. da Universidade&lt;/b&gt;/&lt;b&gt;N235&lt;/b&gt;</html_instructions>
+    <distance>
+     <value>4</value>
+     <text>4 m</text>
+    </distance>
+   </step>
+   <step>
+    <travel_mode>DRIVING</travel_mode>
+    <start_location>
+     <lat>40.6331550</lat>
+     <lng>-8.6557630</lng>
+    </start_location>
+    <end_location>
+     <lat>40.6249208</lat>
+     <lng>-8.6507481</lng>
+    </end_location>
+    <polyline>
+     <points>gd_wFnqys@`Ag@rFqCFCHEdEqBFEPIjEyBjHmD|@[x@Uz@Sj@M`AUVGb@KZK`@SPKRMJIJMTUJMJM\k@FKHUVk@</points>
+    </polyline>
+    <duration>
+     <value>90</value>
+     <text>2 mins</text>
+    </duration>
+    <html_instructions>Turn &lt;b&gt;right&lt;/b&gt; onto &lt;b&gt;Av. da Universidade&lt;/b&gt;/&lt;b&gt;N235&lt;/b&gt;</html_instructions>
+    <distance>
+     <value>1021</value>
+     <text>1.0 km</text>
+    </distance>
+    <maneuver>turn-right</maneuver>
+   </step>
+   <step>
+    <travel_mode>DRIVING</travel_mode>
+    <start_location>
+     <lat>40.6249208</lat>
+     <lng>-8.6507481</lng>
+    </start_location>
+    <end_location>
+     <lat>40.6240683</lat>
+     <lng>-8.6504302</lng>
+    </end_location>
+    <polyline>
+     <points>wp}vFdrxs@TSDCDADAD?ZDBBFBD@F?D?F?BAB?BABCDEHKHELS</points>
+    </polyline>
+    <duration>
+     <value>16</value>
+     <text>1 min</text>
+    </duration>
+    <html_instructions>Take the &lt;b&gt;N109&lt;/b&gt; ramp to &lt;b&gt;Fig.ra Foz&lt;/b&gt;/&lt;b&gt;Ilhavo&lt;/b&gt;/&lt;b&gt;A25&lt;/b&gt;</html_instructions>
+    <distance>
+     <value>106</value>
+     <text>0.1 km</text>
+    </distance>
+   </step>
+   <step>
+    <travel_mode>DRIVING</travel_mode>
+    <start_location>
+     <lat>40.6240683</lat>
+     <lng>-8.6504302</lng>
+    </start_location>
+    <end_location>
+     <lat>40.6252379</lat>
+     <lng>-8.6490993</lng>
+    </end_location>
+    <polyline>
+     <points>mk}vFdpxs@L]JQA?GG_@YSQc@]AAIGAAEC_@Yi@a@cA{@</points>
+    </polyline>
+    <duration>
+     <value>28</value>
+     <text>1 min</text>
+    </duration>
+    <html_instructions>Turn &lt;b&gt;left&lt;/b&gt; onto &lt;b&gt;N109&lt;/b&gt; (signs for &lt;b&gt;Viseu&lt;/b&gt;/&lt;b&gt;A25&lt;/b&gt;/&lt;b&gt;Porto&lt;/b&gt;)</html_instructions>
+    <distance>
+     <value>195</value>
+     <text>0.2 km</text>
+    </distance>
+    <maneuver>turn-left</maneuver>
+   </step>
+   <step>
+    <travel_mode>DRIVING</travel_mode>
+    <start_location>
+     <lat>40.6252379</lat>
+     <lng>-8.6490993</lng>
+    </start_location>
+    <end_location>
+     <lat>40.6268257</lat>
+     <lng>-8.6476107</lng>
+    </end_location>
+    <polyline>
+     <points>wr}vFzgxs@GOMUKQyDaDiA}@WQ</points>
+    </polyline>
+    <duration>
+     <value>26</value>
+     <text>1 min</text>
+    </duration>
+    <html_instructions>Take the exit toward &lt;b&gt;Aveiro Centro&lt;/b&gt;/&lt;b&gt;Aradas&lt;/b&gt;</html_instructions>
+    <distance>
+     <value>218</value>
+     <text>0.2 km</text>
+    </distance>
+    <maneuver>ramp-right</maneuver>
+   </step>
+   <step>
+    <travel_mode>DRIVING</travel_mode>
+    <start_location>
+     <lat>40.6268257</lat>
+     <lng>-8.6476107</lng>
+    </start_location>
+    <end_location>
+     <lat>40.6269089</lat>
+     <lng>-8.6461870</lng>
+    </end_location>
+    <polyline>
+     <points>u|}vFp~ws@?A?A?A?A?A?AAA?A?AAA?CAA?AAA?AAAAAAAACAAA?AAAACYAM@Q@g@?CFqB@S</points>
+    </polyline>
+    <duration>
+     <value>26</value>
+     <text>1 min</text>
+    </duration>
+    <html_instructions>At the roundabout, take the &lt;b&gt;2nd&lt;/b&gt; exit onto &lt;b&gt;Av. Dom Frei Miguel de Bulhões e Sousa&lt;/b&gt;</html_instructions>
+    <distance>
+     <value>126</value>
+     <text>0.1 km</text>
+    </distance>
+    <maneuver>roundabout-right</maneuver>
+   </step>
+   <step>
+    <travel_mode>DRIVING</travel_mode>
+    <start_location>
+     <lat>40.6269089</lat>
+     <lng>-8.6461870</lng>
+    </start_location>
+    <end_location>
+     <lat>40.6257864</lat>
+     <lng>-8.6447192</lng>
+    </end_location>
+    <polyline>
+     <points>e}}vFtuws@BABCBA@CBE@C?E@C?EPWbBwBPSj@y@Ta@</points>
+    </polyline>
+    <duration>
+     <value>49</value>
+     <text>1 min</text>
+    </duration>
+    <html_instructions>At the roundabout, take the &lt;b&gt;1st&lt;/b&gt; exit and stay on &lt;b&gt;Av. Dom Frei Miguel de Bulhões e Sousa&lt;/b&gt;&lt;div style=&quot;font-size:0.9em&quot;&gt;Destination will be on the right&lt;/div&gt;</html_instructions>
+    <distance>
+     <value>178</value>
+     <text>0.2 km</text>
+    </distance>
+    <maneuver>roundabout-right</maneuver>
+   </step>
+   <duration>
+    <value>236</value>
+    <text>4 mins</text>
+   </duration>
+   <distance>
+    <value>1848</value>
+    <text>1.8 km</text>
+   </distance>
+   <start_location>
+    <lat>40.6331336</lat>
+    <lng>-8.6557976</lng>
+   </start_location>
+   <end_location>
+    <lat>40.6257864</lat>
+    <lng>-8.6447192</lng>
+   </end_location>
+   <start_address>Campus Universitário de Santiago, 3810-193 Aveiro, Portugal</start_address>
+   <end_address>Av. Dom Frei Miguel de Bulhões e Sousa, 3810-164, Portugal</end_address>
+  </leg>
+  <copyrights>Map data ©2018 Google</copyrights>
+  <overview_polyline>
+   <points>ad_wFvqys@EG`Ag@zFuChFgCvNgHvBq@`E_A~@Wr@_@^W`@c@V[d@w@`@aAZWJC`@DJFL@TAFENQVYXo@}@s@q@i@sC{BUe@KQyDaDaBoA?C?EAGIQGGCCEg@JoD@SBAFEFS@ItBoC|@mATa@</points>
+  </overview_polyline>
+  <bounds>
+   <southwest>
+    <lat>40.6239444</lat>
+    <lng>-8.6557976</lng>
+   </southwest>
+   <northeast>
+    <lat>40.6331550</lat>
+    <lng>-8.6447192</lng>
+   </northeast>
+  </bounds>
+ </route>
+ <geocoded_waypoint>
+  <geocoder_status>OK</geocoder_status>
+  <type>establishment</type>
+  <type>point_of_interest</type>
+  <type>university</type>
+  <place_id>ChIJK9obTqqiIw0RhVRHSWeXC9c</place_id>
+ </geocoded_waypoint>
+ <geocoded_waypoint>
+  <geocoder_status>OK</geocoder_status>
+  <type>route</type>
+  <place_id>ChIJXwwiwKSiIw0RQCMwPa65AB4</place_id>
+ </geocoded_waypoint>
+</DirectionsResponse>

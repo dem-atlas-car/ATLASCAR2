@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<launch>
+	<!-- Launch GPS and IMU data -->
+    <include file="$(find novatel_gps_driver)/launch/novatel.launch"/>
+
+	<!-- Launch  point_grey camera drivers-->
+    <include file="$(find pointgrey_camera_driver)/launch/camera.launch"/>
+
+	<!-- Launch  lasers drivers-->
+    <include file="$(find free_space_detection)/launch/drivers.launch"/>
+
+	<!-- Launch  remote database LAR -->
+    <include file="$(find database)/launch/database.launch"/>
+
+	<!-- Launch  inclinometry -->
+    <include file="$(find road_reconstruction)/launch/serial.launch"/>
+
+    <!-- Launch  inclinometry -->
+    <include file="$(find free_space_detection)/launch/device_frame.launch"/>
+
+
+
+</launch>

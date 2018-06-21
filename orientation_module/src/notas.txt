@@ -1,0 +1,8 @@
+
+-Verificar as leituras dos sensores, acertar a  frequência de leituras e fazer gráfico para ver a precisão das leitura e se neceessário implementar um filtro de mediana.
+
+-O imu da as posições e orientações em relação ao referencial mundo (\world)
+
+
+ip do switch:
+igual ao dos lasers mas acaba em .100

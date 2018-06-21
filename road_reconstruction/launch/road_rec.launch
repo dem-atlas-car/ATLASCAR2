@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<!-- -->
+<launch>
+    <!-- Usar isto quando se usam bags ou usar "rosparam set use_sim_time true"-->
+    <!-- <param name="use_sim_time" value="true"/> -->
+    <!-- Resto das defenições -->
+    <!-- <arg name = "record" default = "false"/>
+    <param name = "includeUnav" value="true" type="bool"/>
+    <param name = "IncludeScans" value="111111" type="string"/>-->
+     <param name = "ref_sensor" value="lms151_E" type="string"/>
+    <!--Launch the visualization-->
+    <!-- <node pkg="rviz" type="rviz" name="rviz" args="-display-config $(find free_space_detection)/config/rviz.rviz" required="false"/> -->
+    <!-- Launch the node   -->
+    <!-- <node pkg="free_space_detection" type="device_frame_publisher_node" name="device_frame_publisher" required="true" output
+    ="screen"/> -->
+
+    <!-- Launch the node   descometar para correr!!!!!!!-->
+    <node pkg="orientation_module" type="frame_tf_broadcaster" name="frame_tf_broadcaster" required="true" output="screen"/>
+    <!-- Launch the node   -->
+    <node pkg="orientation_module" type="orientation_module_node" name="comunic" required="true" output="screen"/>
+
+    <!-- Point cloud assembler -->
+    <node type="laser_scan_assembler" pkg="laser_assembler" name="my_assembler0">
+        <remap from="scan" to="/ld_rms/scan0"/>
+        <remap from="assemble_scans2" to="assemble_scans0"/>
+        <param name="max_scans" type="int" value="150" />
+        <param name="fixed_frame" type="string" value="map" />
+    </node>
+    <node type="laser_scan_assembler" pkg="laser_assembler" name="my_assembler1">
+        <remap from="scan" to="/ld_rms/scan1"/>
+        <remap from="assemble_scans2" to="assemble_scans1"/>
+        <param name="max_scans" type="int" value="150" />
+        <param name="fixed_frame" type="string" value="map" />
+    </node>
+    <node type="laser_scan_assembler" pkg="laser_assembler" name="my_assembler2">
+        <remap from="scan" to="/ld_rms/scan2"/>
+        <remap from="assemble_scans2" to="assemble_scans2_"/>
+        <param name="max_scans" type="int" value="150" />
+        <param name="fixed_frame" type="string" value="map" />
+    </node>
+    <node type="laser_scan_assembler" pkg="laser_assembler" name="my_assembler3">
+        <remap from="scan" to="/ld_rms/scan3"/>
+        <remap from="assemble_scans2" to="assemble_scans3"/>
+        <param name="max_scans" type="int" value="150" />
+        <param name="fixed_frame" type="string" value="map" />
+    </node>
+
+    <!-- tentativa -->
+    <!--
+  <node type="point_cloud_assembler" pkg="laser_assembler" name="ass_pt">
+    <remap from="cloud" to="cloud_minada2"/>
+    <param name="max_clouds" type="int" value="300" />
+    <param name="fixed_frame" type="string" value="map" />
+  </node> -->
+
+    <!-- tentativa -->
+    <!-- ||||||||||||||||||apagar||||||||||||| -->
+    <!-- <node type="laser_scan_assembler" pkg="laser_assembler" name="single_ass">
+    <remap from="scan" to="/ld_rms/scan3"/>
+    <remap from="assemble_scans2" to="assemble_single"/>
+    <param name="max_scans" type="int" value="1" />
+    <param name="fixed_frame" type="string" value="ground" />
+  </node> -->
+    <!-- |||||||||||||||||||||||||||||||||||||||| -->
+
+    <!-- Launch the node   -->
+    <node pkg="road_reconstruction" type="road_reconstruction" name="road_reconstruction" required="true" output="screen"/>
+    <!-- Launch the node   -->
+    <!-- <node pkg="road_reconstruction" type="assem" name="assem" required="true" output="screen"/> -->
+    <!-- Conversão em dados de gps -->
+    <node name="gps_conv" pkg="gps_common" type="utm_odometry_node">
+        <!-- <remap from="odom" to="vo"/> -->
+        <!-- <remap from="fix" to="/fix" /> -->
+        <param name="rot_covariance" value="99999" />
+        <param name="frame_id" value="world" />
+    </node>
+
+    <!--Launch the recorder-->
+    <!-- <node name="rosbag_record" pkg="rosbag" type="record" output="screen" if="$(arg record)" args=" /ld_rms/scan0 /ld_rms/scan1  /ld_rms/scan2 /ld_rms/scan3 /lms151_D_scan /lms151_E_scan /camera/image_color -o $(find free_space_detection)/laserData/"/> -->
+    <!--Launch the robot model-->
+    <!-- <include file="$(find free_space_detection)/launch/robotmodel.launch" output="log"/> -->
+</launch>

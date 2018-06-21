@@ -1,0 +1,17 @@
+#Request the whole mission path ( coordinates and instructions )
+
+#Request fields
+float64 gpsLat
+float64 gpsLon
+float64 destLat
+float64 destLon
+---
+#Response fields
+float64[] lat
+float64[] lon
+string[] instruction
+float64[] startlat
+float64[] endlat
+float64[] startlon
+float64[] endlon
+

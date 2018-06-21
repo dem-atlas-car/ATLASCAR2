@@ -1,0 +1,11 @@
+<library path="lib/libswri_transform_util_nodelets">
+  <class name="swri_transform_util/dynamic_publisher" type="swri_transform_util::DynamicPublisher" base_class_type="nodelet::Nodelet">
+    <description>      Nodelet to publish a dynamically reconfigurable TF transform.    </description>
+  </class>
+  <class name="swri_transform_util/gps_transform_publisher" type="swri_transform_util::GpsTransformPublisher" base_class_type="nodelet::Nodelet">
+    <description>      Takes in GPSFix messages and publishes a transform from the local XY origin to the      corresponding position.    </description>
+  </class>
+  <class name="swri_transform_util/imu_transform_publisher" type="swri_transform_util::ImuTransformPublisher" base_class_type="nodelet::Nodelet">
+    <description>      Takes in Imu messages and publishes a transform from the local XY origin to the      corresponding position. Azimuth difference between GpsTransformPublisher.!!    </description>
+  </class>
+</library>

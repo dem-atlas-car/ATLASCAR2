@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- -->
+<launch>
+     <param name = "ref_sensor" value="lms151_E" type="string"/>
+    <!--Launch the visualization-->
+    <!-- Launch the node   -->
+    <node pkg="free_space_detection" type="device_frame_publisher_node" name="device_frame_publisher" required="true" output
+    ="screen"/>
+
+
+</launch>

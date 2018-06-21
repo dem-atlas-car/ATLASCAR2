@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<launch>
+	<!-- Launch Global planning -->
+    <include file="$(find global_planning)/launch/global_planning.launch"/>
+
+	<!-- Launch road reconstruction -->
+    <include file="$(find road_reconstruction)/launch/road_rec.launch"/>
+
+	<!-- Launch mapviz -->
+    <include file="$(find mapviz)/launch/mapviz.launch"/>
+
+	<!-- Launch free space -->
+    <include file="$(find free_space_detection)/launch/free_space.launch"/>
+
+	<!-- Launch trajectory_planner -->
+    <include file="$(find trajectory_planner)/launch/trajectory_planner_way_points.launch"/>
+
+	<!-- Launch rviz -->
+     <node name="rviz" pkg="rviz" type="rviz" args="--display-config $(find trajectory_planner)/config/rviz.rviz" required="false"/>
+</launch>

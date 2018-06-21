@@ -1,0 +1,51 @@
+capture_directory: ~
+fixed_frame: world
+target_frame: <none>
+fix_orientation: false
+rotate_90: false
+enable_antialiasing: true
+show_displays: true
+show_status_bar: true
+show_capture_tools: true
+window_width: 1871
+window_height: 1056
+view_scale: 7.606197e+07
+offset_x: -178.458
+offset_y: 1.648573
+use_latest_transforms: false
+background: "#a0a0a4"
+image_transport: theora
+displays:
+  - type: mapviz_plugins/tile_map
+    name: new display
+    config:
+      visible: false
+      collapsed: false
+      custom_sources:
+        - base_url: "http://localhost:8080/wmts/gm_layer/gm_grid/{level}/{x}/{y}.png\n"
+          max_zoom: 19
+          name: go2
+          type: wmts
+        - base_url: http://localhost:8080/wmts/gm_layer/gm_grid/{level}/{x}/{y}.png
+          max_zoom: 19
+          name: google1
+          type: wmts
+        - base_url: "http://localhost:8080/wmts/gm_layer/gm_grid/{level}/{x}/{y}.png\n\n"
+          max_zoom: 19
+          name: google2
+          type: wmts
+      bing_api_key: ""
+      source: google1
+  - type: mapviz_plugins/gps
+    name: new display
+    config:
+      visible: false
+      collapsed: false
+      topic: /gps
+      color: "#ffff7f"
+      draw_style: points
+      position_tolerance: 1
+      buffer_size: 4
+      show_laps: false
+      static_arrow_sizes: false
+      arrow_size: 4
